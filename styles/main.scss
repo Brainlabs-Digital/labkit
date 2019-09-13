@@ -1,0 +1,13 @@
+@import './variables';
+@import './reset';
+@import './transitions';
+
+/*
+    The reason these dropezone specific classes aren't scoped to a component is
+    because the dropzone elements are created by an external script (dropzone)
+    and therefore do not have the components scoping applied to them.
+*/
+.dropzone .dz-preview,
+.dropzone .dz-preview .dz-image {
+    border-radius: border-radius(button) !important;
+}

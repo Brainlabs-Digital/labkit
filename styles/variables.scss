@@ -1,0 +1,286 @@
+/*
+    Colors
+*/
+$grey-saturation: 0;
+$grey-hue: 0%;
+
+/*
+    TODO:
+    Should we attempt to have only 1 color map? Why do we have distinct
+    background and border color maps?
+*/
+
+$background-color: (
+    body: hsl($grey-saturation, $grey-hue, 100%),
+    content: hsl($grey-saturation, $grey-hue, 100%),
+    muted: hsl($grey-saturation, $grey-hue, 91%),
+    light: hsl($grey-saturation, $grey-hue, 95.5%),
+    extra-light: hsl($grey-saturation, $grey-hue, 97%),
+    highlight: (
+        primary: hsl(60, 100%, 95%),
+        secondary: hsl(200, 100%, 95%),
+    ),
+);
+
+@function background-color($tone, $modifier: null) {
+    @if $modifier != null {
+        @return map-get(map-get($background-color, $tone), $modifier);
+    } @else {
+        @return map-get($background-color, $tone);
+    }
+}
+
+$border-color: (
+    base: hsl($grey-saturation, $grey-hue, 85%),
+    dark: hsl($grey-saturation, $grey-hue, 66%),
+    light: hsl($grey-saturation, $grey-hue, 91.5%),
+);
+
+@function border-color($tone: 'base') {
+    @return map-get($border-color, $tone);
+}
+
+/*
+    TODO:
+    Think about changing the color scale to be:
+        darkest,
+        darker,
+        dark (dark),
+        base,
+        light (semi-muted),
+        ligher (muted),
+        lightest
+*/
+
+$color: (
+    danger: (
+        base: hsl(12, 82%, 45%),
+        dark: hsl(12, 100%, 25%),
+        semi-muted: hsl(12, 88.5%, 77.5%),
+        muted: hsl(12, 90%, 90%),
+    ),
+    link: (
+        base: hsl(213, 85%, 41%),
+        dark: hsl(213, 92%, 24%),
+        semi-muted: hsl(213, 98%, 76%),
+        muted: hsl(213, 95%, 90%),
+    ),
+    success: (
+        base: hsl(140, 42%, 44%),
+        dark: hsl(140, 35%, 25%),
+        semi-muted: hsl(140, 46%, 72%),
+        muted: hsl(140, 48%, 90%),
+    ),
+    text: (
+        base: hsl($grey-saturation, $grey-hue, 7%),
+        inverse: hsl($grey-saturation, $grey-hue, 100%),
+        muted: hsl($grey-saturation, $grey-hue, 40%),
+        light: hsl($grey-saturation, $grey-hue, 54%),
+    ),
+    warning: (
+        base: hsl(33, 87%, 51%),
+        dark: hsl(33, 90%, 30%),
+        semi-muted: hsl(33, 90%, 72%),
+        muted: hsl(33, 80%, 90%),
+    ),
+);
+
+@function color($type, $tone: 'base') {
+    @return map-get(map-get($color, $type), $tone);
+}
+
+/*
+    Fonts
+*/
+
+$font-family: (
+    base: (-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"),
+    code: (SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace),
+);
+
+@function font-family($style: 'base') {
+    @return map-get($font-family, $style);
+}
+
+$font-size: (
+    caption: 1.3rem,
+    primary: 1.4rem,
+    label: 1.5rem,
+    body: 1.6rem,
+    sub-heading: 1.8rem,
+    section-heading: 2.2rem,
+    heading: 3rem,
+);
+
+@function font-size($size: 'primary') {
+    @return map-get($font-size, $size);
+}
+
+/*
+    Borders
+*/
+
+$border-radius: (
+    badge: 0.3rem,
+    button: 0.6rem,
+    panel: 1.2rem,
+);
+
+@function border-radius($size) {
+    @return map-get($border-radius, $size);
+}
+
+$border-width: (
+    base: 0.1rem,
+    medium: 0.2rem,
+    thick: 0.3rem,
+);
+
+@function border-width($size: 'base') {
+    @return map-get($border-width, $size);
+}
+
+/*
+    Spacing
+*/
+
+/*
+    TODO:
+    Think about making the scale of spacing be:
+        largest,
+        larger,
+        large,
+        base,
+        small,
+        smaller,
+        smallest
+
+    However, I don't like that we lose semantic meaning with this naming scheme.
+*/
+
+$spacing-vertical: (
+    base: 1.6rem,
+    content: 1.2rem,
+    compact: 0.8rem,
+    compact-content: 0.5rem,
+    mini: 0.4rem,
+    mini-content: 0.4rem,
+    badge: (
+        base: 0.4rem,
+    ),
+    button: (
+        base: 1.3rem,
+        compact: 0.9rem,
+        mini: 0.6rem,
+        micro: 0.3rem,
+    ),
+);
+
+@function spacing-vertical($primary: 'base', $secondary: 'base') {
+    @if $primary == 'button' or $primary == 'badge' {
+        @return map-get(map-get($spacing-vertical, $primary), $secondary);
+    } @else {
+        @return map-get($spacing-vertical, $primary);
+    }
+}
+
+$spacing-horizontal-map: (
+    base: 1.6rem,
+    content: 1.2rem,
+    compact: 0.8rem,
+    mini: 0.4rem,
+    badge: (
+        base: 0.6rem,
+    ),
+    button: (
+        base: 1.5rem,
+        compact: 1.1rem,
+        mini: 0.8rem,
+        micro: 0.4rem,
+    ),
+);
+
+@function spacing-horizontal($primary: 'base', $secondary: 'base') {
+    @if $primary == 'button' or $primary == 'badge' {
+        @return map-get(map-get($spacing-horizontal-map, $primary), $secondary);
+    } @else {
+        @return map-get($spacing-horizontal-map, $primary);
+    }
+}
+
+$spacing-vertical-remainder: (
+    base: (
+        content: spacing-vertical() - spacing-vertical(content),
+        compact: spacing-vertical() - spacing-vertical(compact),
+        compact-content: spacing-vertical() - spacing-vertical(compact-content),
+        mini: spacing-vertical() - spacing-vertical(mini),
+        mini-content: spacing-vertical() - spacing-vertical(mini-content),
+    ),
+    content: (
+        compact: spacing-vertical(content) - spacing-vertical(compact),
+        compact-content: spacing-vertical(content) - spacing-vertical(compact-content),
+        mini: spacing-vertical(content) - spacing-vertical(mini),
+        mini-content: spacing-vertical(content) - spacing-vertical(mini-content),
+    ),
+    compact: (
+        compact-content: spacing-vertical(compact) - spacing-vertical(compact-content),
+        mini: spacing-vertical(compact) - spacing-vertical(mini),
+        mini-content: spacing-vertical(compact) - spacing-vertical(mini-content),
+    ),
+    mini: (
+        mini-content: spacing-vertical(mini) - spacing-vertical(mini-content),
+    ),
+);
+
+@function spacing-vertical-remainder($primary, $secondary: null) {
+    @if $secondary == null {
+        @return map-get(map-get($spacing-vertical-remainder, 'base'), $primary);
+    } @else {
+        @return map-get(map-get($spacing-vertical-remainder, $primary), $secondary);
+    }
+}
+
+/*
+    Grid
+*/
+
+$container-max-width: 1280px;
+
+$content-readable-width: 640px;
+
+$grid-columns: 12;
+$grid-gutter-width: spacing-horizontal();
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+);
+
+/*
+    Misc.
+*/
+
+$shadow-map: (
+    shallow: 0 0.1rem 0.4rem rgba(0, 0, 0, 0.08),
+    base: 0 0.2rem 1rem rgba(0, 0, 0, 0.15),
+    deep: 0 0.3rem 2rem rgba(0, 0, 0, 0.3),
+    link: (
+        shallow: 0 0.1rem 0.4rem rgba(color(link), 0.3),
+        base: 0 0.2rem 1rem rgba(color(link), 0.35),
+        deep: 0 0.3rem 2rem rgba(color(link), 0.45),
+    ),
+);
+
+@function shadow($primary: 'base', $secondary: 'base') {
+    @if $primary == 'link' {
+        @return map-get(map-get($shadow-map, $primary), $secondary);
+    } @else {
+        @return map-get($shadow-map, $primary);
+    }
+}
+
+$transition-duration: 0.15s;
+$transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);

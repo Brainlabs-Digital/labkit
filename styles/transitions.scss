@@ -1,0 +1,29 @@
+.fade-scale-enter-active,
+.fade-scale-leave-active {
+  transition: opacity 0.22s, transform 0.22s;
+  transition-timing-function: $transition-timing-function;
+}
+
+.fade-scale-enter {
+	opacity: 0;
+	transform: scale(1.075, 1.075);
+}
+
+.fade-scale-leave-to {
+	opacity: 0;
+	transform: scale(1.075, 1.075);
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.22s;
+  transition-timing-function: $transition-timing-function;
+}
+
+.fade-enter {
+	opacity: 0;
+}
+
+.fade-leave-to {
+	opacity: 0;
+}

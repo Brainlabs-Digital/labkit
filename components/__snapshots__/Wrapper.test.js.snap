@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Wrapper component When no props are provided renders as expected 1`] = `<div class="base"></div>`;
+
+exports[`Wrapper component When props are provided renders as expected 1`] = `<div class="base display--none sm__display--block md__display--inline-block"></div>`;

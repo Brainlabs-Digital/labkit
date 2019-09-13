@@ -1,0 +1,119 @@
+/*
+    Breakpoints.
+*/
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min != 0, $min, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+    $min: breakpoint-min($name, $breakpoints);
+    @if $min {
+        @media (min-width: $min) {
+            @content;
+        }
+    } @else {
+        @content;
+    }
+}
+
+/*
+    Used by the checkbox and radio components.
+*/
+@mixin make-input-label-container($input-type) {
+    input[type='#{$input-type}'] {
+        clip: rect(1px, 1px, 1px, 1px);
+        position: absolute;
+        white-space: nowrap;
+        opacity: 0;
+        border-width: 0px;
+        border-style: initial;
+        border-color: initial;
+        border-image: initial;
+        overflow: hidden;
+        padding: 0px;
+    }
+    > input[type='#{$input-type}'] + label {
+        .icon-selected {
+            display: none;
+        }
+        .icon-not-selected {
+            display: inline-block;
+        }
+    }
+    > input[type='#{$input-type}']:checked + label {
+        background: background-color(content);
+        &:hover {
+            > p {
+                text-decoration: line-through;
+            }
+            > p + p {
+                text-decoration: none;
+            }
+        }
+        > p {
+            color: color(text);
+        }
+        > p + p {
+            color: color(text, muted);
+        }
+        .icon-selected {
+            display: inline-block;
+        }
+        .icon-not-selected {
+            display: none;
+        }
+    }
+    > label {
+        background: background-color(light);
+        border: border-width() solid border-color();
+        cursor: pointer;
+        display: block;
+        margin: 0 0 (0 - border-width());
+        padding: spacing-vertical(content) spacing-horizontal();
+        position: relative;
+        transition: background $transition-duration;
+        transition-timing-function: $transition-timing-function;
+        user-select: none;
+        z-index: 0;
+        &:first-of-type {
+            border-radius: border-radius(button) border-radius(button) 0 0;
+        }
+        &:first-of-type:last-of-type {
+            border-radius: border-radius(button);
+        }
+        &:hover {
+            border-color: color(text);
+            z-index: 1;
+            > p {
+                color: color(text);
+            }
+            > p + p {
+                color: color(text, muted);
+            }
+        }
+        &:last-of-type {
+            border-radius: 0 0 border-radius(button) border-radius(button);
+            margin: 0;
+        }
+        > p {
+            color: color(text, muted);
+            font-size: font-size();
+            font-weight: bold;
+            text-transform: capitalize;
+            transition: color $transition-duration;
+            transition-timing-function: $transition-timing-function;
+        }
+        > p + p {
+            color: color(text, muted);
+            font-size: font-size(caption);
+            font-weight: normal;
+            text-transform: none;
+        }
+        .icon {
+            display: inline-block;
+            font-size: font-size(body);
+            margin: (0 - (font-size(body) - font-size())) 0;
+        }
+    }
+}
