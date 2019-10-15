@@ -2,9 +2,7 @@
 
 ## Intentions
 
-LabKit is a component library: a set of reusable components that compliment each other.
-
-The ultimate goal is to expose LabKit as an NPM module, however it is currently implemented as part of the UI project for ease of development and quick iteration.
+LabKit is a component library: a set of reusable components that complement each other.
 
 ## Rules
 
