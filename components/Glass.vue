@@ -1,13 +1,9 @@
 <template>
     <portal :to="portalTarget">
         <transition name="fade-scale">
-            <div 
-                :class="[$style.wrapper]" 
-                ref="glass" 
-                @click="click"
-            >
-                <div :class="[$style.container]">
-                    <slot/>
+            <div :class="[$style.wrapper]" ref="glass" @click="click">
+                <div :style="ifContainerSizeIsSet()" :class="[$style.container]">
+                    <slot />
                 </div>
             </div>
         </transition>
@@ -15,10 +11,13 @@
 </template>
 
 <script>
+<<<<<<< HEAD
 import EventBus from '../lib/event-bus';
 
+=======
+import EventBus from '@/labkit/lib/event-bus';
+>>>>>>> Added ability to size modals
 let instanceId = 0;
-
 export default {
     beforeDestroy() {
         window.glassCounter -= 1;
@@ -49,6 +48,13 @@ export default {
     data() {
         return {
             portalTarget: undefined,
+            containerSizeMappings: {
+                xs: '0px',
+                sm: '576px',
+                md: '768px',
+                lg: '992px',
+                xl: '1200px',
+            },
         };
     },
     destroyed() {
@@ -63,6 +69,14 @@ export default {
         close() {
             this.$emit('closed');
         },
+        ifContainerSizeIsSet() {
+            if (this.containerSize !== undefined) {
+                return {
+                    'max-width': this.containerSizeMappings[this.containerSize],
+                    'width': this.containerSizeMappings[this.containerSize],
+                };
+            }
+        },
     },
     mounted() {
         if (window.glassCounter === 1) {
@@ -72,6 +86,9 @@ export default {
     props: {
         unbreakable: {
             type: Boolean,
+        },
+        containerSize: {
+            type: String,
         },
     },
 };
@@ -85,11 +102,9 @@ export default {
     max-width: map-get($grid-breakpoints, 'md');
     width: 100%;
 }
-
 .no-scroll {
     overflow: hidden;
 }
-
 .wrapper {
     align-items: center;
     background: rgba(background-color(content), 0.85);

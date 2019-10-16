@@ -1,5 +1,5 @@
 <template>
-    <lk-glass unbreakable>
+    <lk-glass :containerSize="readSizeProperty()" unbreakable>
         <lk-panel shadow-shallow>
             <slot/>
         </lk-panel>
@@ -7,10 +7,10 @@
             v-if="showCloseButton === true"
             :class="$style['close-button-container']"
         >
-            <lk-button 
-                circle 
-                danger 
-                shadow 
+            <lk-button
+                circle
+                danger
+                shadow
                 @click.native="close"
             >
                 <lk-icon icon="times"/>
@@ -25,12 +25,19 @@ export default {
         close() {
             this.$emit('closed');
         },
+        readSizeProperty() {
+            return this.size;
+        }
     },
     props: {
         showCloseButton: {
             default: true,
             type: Boolean,
         },
+        size: {
+            default: "md",
+            type: String,
+        }
     },
 };
 </script>
