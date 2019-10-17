@@ -1,7 +1,7 @@
-import '@/labkit';
-import App from '@/labkit/documentation/App.vue';
+import '..';
+import App from '../documentation/App.vue';
 import PortalVue from 'portal-vue';
-import router from '@/labkit/documentation/router';
+import router from '../documentation/router';
 import Vue from 'vue';
 
 Vue.config.productionTip = false;

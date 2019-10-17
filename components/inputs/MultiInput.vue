@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import InputLabel from '@/labkit/components/inputs/utils/InputLabel';
+import InputLabel from '../../components/inputs/utils/InputLabel';
 
 export default {
     components: {

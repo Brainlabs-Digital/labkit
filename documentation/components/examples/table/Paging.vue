@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import * as pagination from '@/labkit/lib/pagination';
+import * as pagination from '../../../../lib/pagination';
 
 export default {
     computed: {

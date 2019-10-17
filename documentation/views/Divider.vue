@@ -57,7 +57,7 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
+import Code from '../../documentation/components/Code';
 
 export default {
     components: {

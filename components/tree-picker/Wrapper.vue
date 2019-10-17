@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import InputError from '@/labkit/components/inputs/utils/InputError';
+import InputError from '../../components/inputs/utils/InputError';
 import Node from './Node';
 
 const filters = {

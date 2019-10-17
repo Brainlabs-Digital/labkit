@@ -74,8 +74,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import Example from '@/labkit/documentation/components/examples/glass/Example';
+import Code from '../../documentation/components/Code';
+import Example from '../../documentation/components/examples/glass/Example';
 
 export default {
     components: {

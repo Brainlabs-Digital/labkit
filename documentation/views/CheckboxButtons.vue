@@ -34,8 +34,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import Example from '@/labkit/documentation/components/examples/checkbox-buttons/Example';
+import Code from '../../documentation/components/Code';
+import Example from '../../documentation/components/examples/checkbox-buttons/Example';
 
 export default {
     components: {

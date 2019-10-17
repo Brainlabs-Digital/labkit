@@ -237,10 +237,10 @@
 </template>
 
 <script>
-import BaseExamples from '@/labkit/documentation/components/examples/button/Base';
-import ClickCounter from '@/labkit/documentation/components/examples/button/ClickCounter';
-import Code from '@/labkit/documentation/components/Code';
-import FormSubmit from '@/labkit/documentation/components/examples/button/FormSubmit';
+import BaseExamples from '../../documentation/components/examples/button/Base';
+import ClickCounter from '../../documentation/components/examples/button/ClickCounter';
+import Code from '../../documentation/components/Code';
+import FormSubmit from '../../documentation/components/examples/button/FormSubmit';
 
 export default {
     components: {

@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import Example from '@/labkit/documentation/components/examples/multi-input/Example';
-import Code from '@/labkit/documentation/components/Code';
+import Example from '../../documentation/components/examples/multi-input/Example';
+import Code from '../../documentation/components/Code';
 
 export default {
     components: {

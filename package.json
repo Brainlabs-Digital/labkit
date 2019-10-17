@@ -1,0 +1,43 @@
+{
+  "name": "labkit",
+  "version": "1.0.0",
+  "description": "## Intentions",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vue-cli-service build --modern"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brainlabs-Digital/labkit.git"
+  },
+  "author": "",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "bugs": {
+    "url": "https://github.com/Brainlabs-Digital/labkit/issues"
+  },
+  "homepage": "https://github.com/Brainlabs-Digital/labkit#readme",
+  "dependencies": {
+    "dropzone": "^5.5.1",
+    "highlightjs": "^9.10.0",
+    "lodash.orderby": "^4.6.0",
+    "luxon": "^1.12.1",
+    "moment": "^2.22.2",
+    "popper.js": "^1.14.4",
+    "portal-vue": "^1.5.1",
+    "vue": "^2.6.9",
+    "vue-datetime": "^1.0.0-beta.10",
+    "vue-router": "^3.0.1",
+    "weekstart": "^1.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^3.0.4",
+    "vue-template-compiler": "^2.5.17",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.1",
+    "webpack": "^4.0.1"
+  }
+}

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import EventBus from '@/labkit/lib/event-bus';
+import EventBus from '../lib/event-bus';
 
 export default {
     beforeDestroy() {

@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import Example from '@/labkit/documentation/components/examples/dropdown-button/Example';
+import Code from '../../documentation/components/Code';
+import Example from '../../documentation/components/examples/dropdown-button/Example';
 
 export default {
     components: {

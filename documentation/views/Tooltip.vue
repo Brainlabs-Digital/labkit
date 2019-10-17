@@ -260,8 +260,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import Example from '@/labkit/documentation/components/examples/tooltip/Example';
+import Code from '../../documentation/components/Code';
+import Example from '../../documentation/components/examples/tooltip/Example';
 
 export default {
     components: {

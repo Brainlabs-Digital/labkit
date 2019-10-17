@@ -5,7 +5,9 @@
             :exact-active-class="$style['logo-link-active']"
             to="/labkit"
         >
+        <!--- FIXME
             <img src="@/assets/brainlabs-logo.png">
+        --->
         </router-link>
         <lk-navigation-tree :items="navigationItems"/>
     </div>

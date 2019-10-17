@@ -323,8 +323,8 @@ export default {
 </template>
 
 <script>
-import Example from '@/labkit/documentation/components/examples/select/Example';
-import Code from '@/labkit/documentation/components/Code';
+import Example from '../../documentation/components/examples/select/Example';
+import Code from '../../documentation/components/Code';
 
 export default {
     components: {

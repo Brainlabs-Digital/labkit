@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import CollapseExample from '@/labkit/documentation/components/examples/tree/Collapse';
+import Code from '../../documentation/components/Code';
+import CollapseExample from '../../documentation/components/examples/tree/Collapse';
 
 export default {
     components: {

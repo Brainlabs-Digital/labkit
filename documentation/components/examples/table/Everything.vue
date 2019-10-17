@@ -92,7 +92,7 @@
 
 <script>
 import orderBy from 'lodash.orderby';
-import * as pagination from '@/labkit/lib/pagination';
+import * as pagination from '../../../../lib/pagination';
 
 export default {
     computed: {

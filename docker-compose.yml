@@ -1,0 +1,14 @@
+version: "3.1"
+services:
+    ui:
+        build: .
+        ports:
+        - 8081:8081
+        restart:
+        # The UI has a tendency to go down due to a memory leak (only an issue
+        # in development: it's linked to the build/bundling process) so we
+        # set this so that it restarts automatically (hopefully).
+        restart: on-failure
+        volumes:
+            - .:/app/:cached
+        working_dir: /app

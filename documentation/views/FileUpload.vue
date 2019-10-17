@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import Example from '@/labkit/documentation/components/examples/file-upload/Example';
+import Code from '../../documentation/components/Code';
+import Example from '../../documentation/components/examples/file-upload/Example';
 
 export default {
     components: {

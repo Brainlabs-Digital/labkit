@@ -103,8 +103,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import InteractionExample from '@/labkit/documentation/components/examples/page-navigation/InteractionExample';
+import Code from '../../documentation/components/Code';
+import InteractionExample from '../../documentation/components/examples/page-navigation/InteractionExample';
 
 export default {
     components: {

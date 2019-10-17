@@ -28,8 +28,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import Example from '@/labkit/documentation/components/examples/tree-picker/Example';
+import Code from '../../documentation/components/Code';
+import Example from '../../documentation/components/examples/tree-picker/Example';
 
 export default {
     components: {

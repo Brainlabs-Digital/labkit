@@ -546,8 +546,8 @@
 </template>
 
 <script>
-import CallbackExample from '@/labkit/documentation/components/examples/navigation-tabs/Callback';
-import Code from '@/labkit/documentation/components/Code';
+import CallbackExample from '../../documentation/components/examples/navigation-tabs/Callback';
+import Code from '../../documentation/components/Code';
 
 export default {
     components: {

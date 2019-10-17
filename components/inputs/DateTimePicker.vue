@@ -37,8 +37,8 @@
 </template>
 <script>
 import 'vue-datetime/dist/vue-datetime.css';
-import InputError from '@/labkit/components/inputs/utils/InputError';
-import InputLabel from '@/labkit/components/inputs/utils/InputLabel';
+import InputError from '../../components/inputs/utils/InputError';
+import InputLabel from '../../components/inputs/utils/InputLabel';
 import moment from 'moment';
 
 export default {

@@ -59,8 +59,8 @@
 </template>
 
 <script>
-import InputError from '@/labkit/components/inputs/utils/InputError';
-import InputLabel from '@/labkit/components/inputs/utils/InputLabel';
+import InputError from '../../components/inputs/utils/InputError';
+import InputLabel from '../../components/inputs/utils/InputLabel';
 
 export default {
     components: {

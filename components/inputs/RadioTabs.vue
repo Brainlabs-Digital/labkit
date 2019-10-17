@@ -46,7 +46,7 @@
     We may need to change this so that the stacked styling is the default,
     applying an inline style if stacked (at the breakpoint) is false.
 */
-import InputLabel from '@/labkit/components/inputs/utils/InputLabel';
+import InputLabel from '../../components/inputs/utils/InputLabel';
 
 export default {
     components: {
