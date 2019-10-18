@@ -124,8 +124,8 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
-@import 'src/labkit/styles/mixins';
+@import 'styles/variables';
+@import 'styles/mixins';
 
 @mixin make-gutter-classes($prefix: '') {
     .#{$prefix}gutter {

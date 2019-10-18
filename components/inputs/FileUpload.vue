@@ -210,7 +210,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 /*
     *** DANGER ZONE ***

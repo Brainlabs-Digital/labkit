@@ -57,7 +57,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 $button-size: 3.1rem;
 $compact-button-size: 3.1rem * 0.75;

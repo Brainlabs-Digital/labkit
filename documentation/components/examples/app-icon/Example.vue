@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 .container {
     font-size: 30px;

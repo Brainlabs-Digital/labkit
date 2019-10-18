@@ -111,7 +111,7 @@ export default {
 };
 </script>
 <style lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 .container {
     position: relative;

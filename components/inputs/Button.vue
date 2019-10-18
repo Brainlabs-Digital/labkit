@@ -137,7 +137,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 @mixin make-button($color, $color-dark, $color-muted) {
     background: $color;

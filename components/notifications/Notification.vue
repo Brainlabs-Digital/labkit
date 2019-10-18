@@ -124,7 +124,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 .container {
     background: color(text);

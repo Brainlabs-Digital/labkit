@@ -103,7 +103,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 /*
     This style block is neither scoped nor modularised because code is being generated
     by a third-party tool (highlight.js), as such we can't control it's class names.

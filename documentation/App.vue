@@ -12,7 +12,7 @@ export default {};
 </script>
 
 <style lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 #app {
     min-height: 100vh;

@@ -102,7 +102,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 .container {
     border: border-width() solid border-color();
     border-radius: border-radius(button);

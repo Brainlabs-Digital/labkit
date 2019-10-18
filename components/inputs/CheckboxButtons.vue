@@ -105,8 +105,8 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/mixins';
-@import 'src/labkit/styles/variables';
+@import 'styles/mixins';
+@import 'styles/variables';
 
 .items-container {
     background: background-color(content);
