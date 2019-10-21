@@ -204,15 +204,15 @@
 </template>
 
 <script>
-import ActionItemsTable from '@/labkit/documentation/components/examples/table/ActionItems';
-import BasicTable from '@/labkit/documentation/components/examples/table/Basic';
-import Code from '@/labkit/documentation/components/Code';
-import EverythingTable from '@/labkit/documentation/components/examples/table/Everything';
-import FilteringTable from '@/labkit/documentation/components/examples/table/Filtering';
-import FlushTable from '@/labkit/documentation/components/examples/table/Flush';
-import PagingTable from '@/labkit/documentation/components/examples/table/Paging';
-import SelectingTable from '@/labkit/documentation/components/examples/table/Selecting';
-import SortingTable from '@/labkit/documentation/components/examples/table/Sorting';
+import ActionItemsTable from '../../documentation/components/examples/table/ActionItems';
+import BasicTable from '../../documentation/components/examples/table/Basic';
+import Code from '../../documentation/components/Code';
+import EverythingTable from '../../documentation/components/examples/table/Everything';
+import FilteringTable from '../../documentation/components/examples/table/Filtering';
+import FlushTable from '../../documentation/components/examples/table/Flush';
+import PagingTable from '../../documentation/components/examples/table/Paging';
+import SelectingTable from '../../documentation/components/examples/table/Selecting';
+import SortingTable from '../../documentation/components/examples/table/Sorting';
 
 export default {
     components: {
@@ -379,7 +379,7 @@ export default {
             everythingSampleScript: `
 // Component <script> content
 import orderBy from 'lodash.orderby';
-import * as pagination from '@/labkit/lib/pagination';
+import * as pagination from '../../lib/pagination';
 
 export default {
     computed: {
@@ -740,7 +740,7 @@ export default {
             `,
             pagingSampleScript: `
 // Component <script> content
-import * as pagination from '@/labkit/lib/pagination';
+import * as pagination from '../../lib/pagination';
 
 export default {
     computed: {
@@ -1002,5 +1002,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

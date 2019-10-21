@@ -30,8 +30,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import CollapseExample from '@/labkit/documentation/components/examples/tree/Collapse';
+import Code from '../../documentation/components/Code';
+import CollapseExample from '../../documentation/components/examples/tree/Collapse';
 
 export default {
     components: {
@@ -167,5 +167,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

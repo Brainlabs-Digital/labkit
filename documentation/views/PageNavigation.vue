@@ -103,8 +103,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import InteractionExample from '@/labkit/documentation/components/examples/page-navigation/InteractionExample';
+import Code from '../../documentation/components/Code';
+import InteractionExample from '../../documentation/components/examples/page-navigation/InteractionExample';
 
 export default {
     components: {
@@ -146,5 +146,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

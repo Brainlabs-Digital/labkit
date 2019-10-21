@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Sidebar from '@/labkit/documentation/components/Sidebar';
+import Sidebar from '../documentation/components/Sidebar';
 
 export default {
     components: {
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 $sidebar-width: 21rem;
 

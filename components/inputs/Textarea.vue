@@ -27,8 +27,8 @@
 </template>
 
 <script>
-import InputError from '@/labkit/components/inputs/utils/InputError';
-import InputLabel from '@/labkit/components/inputs/utils/InputLabel';
+import InputError from '../../components/inputs/utils/InputError';
+import InputLabel from '../../components/inputs/utils/InputLabel';
 
 export default {
     components: {
@@ -86,7 +86,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 /*
     TODO:

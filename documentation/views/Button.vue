@@ -237,10 +237,10 @@
 </template>
 
 <script>
-import BaseExamples from '@/labkit/documentation/components/examples/button/Base';
-import ClickCounter from '@/labkit/documentation/components/examples/button/ClickCounter';
-import Code from '@/labkit/documentation/components/Code';
-import FormSubmit from '@/labkit/documentation/components/examples/button/FormSubmit';
+import BaseExamples from '../../documentation/components/examples/button/Base';
+import ClickCounter from '../../documentation/components/examples/button/ClickCounter';
+import Code from '../../documentation/components/Code';
+import FormSubmit from '../../documentation/components/examples/button/FormSubmit';
 
 export default {
     components: {
@@ -342,7 +342,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 .inverse-background {
     background: color(text);

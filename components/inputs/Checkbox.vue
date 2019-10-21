@@ -46,8 +46,8 @@
 </template>
 
 <script>
-import InputError from '@/labkit/components/inputs/utils/InputError';
-import InputLabel from '@/labkit/components/inputs/utils/InputLabel';
+import InputError from '../../components/inputs/utils/InputError';
+import InputLabel from '../../components/inputs/utils/InputLabel';
 
 /*
     TODO:
@@ -115,8 +115,8 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/mixins';
-@import 'src/labkit/styles/variables';
+@import 'styles/mixins';
+@import 'styles/variables';
 
 .items-container {
     @include make-input-label-container('checkbox');

@@ -3,7 +3,7 @@ import Vue from 'vue';
 
 const Layout = () =>
     import(/* webpackChunkName: "labkit-docs" */
-    '@/labkit/documentation/Layout');
+    '../documentation/Layout');
 
 Vue.use(Router);
 
@@ -17,7 +17,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Home'),
+                    '../documentation/views/Home'),
             },
         },
         {
@@ -26,7 +26,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Alert'),
+                    '../documentation/views/Alert'),
             },
         },
         {
@@ -35,7 +35,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/AppIcon'),
+                    '../documentation/views/AppIcon'),
             },
         },
         {
@@ -44,7 +44,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/SearchSelect'),
+                    '../documentation/views/SearchSelect'),
             },
         },
         {
@@ -53,7 +53,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Badge'),
+                    '../documentation/views/Badge'),
             },
         },
         {
@@ -62,7 +62,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Breadcrumb'),
+                    '../documentation/views/Breadcrumb'),
             },
         },
         {
@@ -71,7 +71,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Button'),
+                    '../documentation/views/Button'),
             },
         },
         {
@@ -80,7 +80,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Card'),
+                    '../documentation/views/Card'),
             },
         },
         {
@@ -89,7 +89,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Checkbox'),
+                    '../documentation/views/Checkbox'),
             },
         },
         {
@@ -98,7 +98,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/CheckboxButtons'),
+                    '../documentation/views/CheckboxButtons'),
             },
         },
         {
@@ -107,7 +107,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Content'),
+                    '../documentation/views/Content'),
             },
         },
         {
@@ -116,7 +116,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/DatePicker'),
+                    '../documentation/views/DatePicker'),
             },
         },
         {
@@ -125,7 +125,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/DateTimePicker'),
+                    '../documentation/views/DateTimePicker'),
             },
         },
         {
@@ -134,7 +134,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Divider'),
+                    '../documentation/views/Divider'),
             },
         },
         {
@@ -143,7 +143,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/DropdownButton'),
+                    '../documentation/views/DropdownButton'),
             },
         },
         {
@@ -152,7 +152,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/DropdownMenu'),
+                    '../documentation/views/DropdownMenu'),
             },
         },
         {
@@ -161,7 +161,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/FileUpload'),
+                    '../documentation/views/FileUpload'),
             },
         },
         {
@@ -170,7 +170,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/FormatNumber'),
+                    '../documentation/views/FormatNumber'),
             },
         },
         {
@@ -179,7 +179,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Glass'),
+                    '../documentation/views/Glass'),
             },
         },
         {
@@ -188,7 +188,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Grid'),
+                    '../documentation/views/Grid'),
             },
         },
         {
@@ -197,7 +197,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Heading'),
+                    '../documentation/views/Heading'),
             },
         },
         {
@@ -206,7 +206,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Input'),
+                    '../documentation/views/Input'),
             },
         },
         {
@@ -215,7 +215,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Icon'),
+                    '../documentation/views/Icon'),
             },
         },
         {
@@ -224,7 +224,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/LoadingGlass'),
+                    '../documentation/views/LoadingGlass'),
             },
         },
         {
@@ -233,7 +233,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/LoadingSpinner'),
+                    '../documentation/views/LoadingSpinner'),
             },
         },
         {
@@ -242,7 +242,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Modal'),
+                    '../documentation/views/Modal'),
             },
         },
         {
@@ -251,7 +251,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/MultiInput'),
+                    '../documentation/views/MultiInput'),
             },
         },
         {
@@ -260,7 +260,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/NavigationTabs'),
+                    '../documentation/views/NavigationTabs'),
             },
         },
         {
@@ -269,7 +269,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/NavigationTree'),
+                    '../documentation/views/NavigationTree'),
             },
         },
         {
@@ -278,7 +278,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Notification'),
+                    '../documentation/views/Notification'),
             },
         },
         {
@@ -287,7 +287,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Padder'),
+                    '../documentation/views/Padder'),
             },
         },
         {
@@ -296,7 +296,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/PageNavigation'),
+                    '../documentation/views/PageNavigation'),
             },
         },
         {
@@ -305,7 +305,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Panel'),
+                    '../documentation/views/Panel'),
             },
         },
         {
@@ -314,7 +314,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Popper'),
+                    '../documentation/views/Popper'),
             },
         },
         {
@@ -323,7 +323,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Switch'),
+                    '../documentation/views/Switch'),
             },
         },
         {
@@ -332,7 +332,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Radio'),
+                    '../documentation/views/Radio'),
             },
         },
         {
@@ -341,7 +341,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/RadioTabs'),
+                    '../documentation/views/RadioTabs'),
             },
         },
         {
@@ -350,7 +350,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Select'),
+                    '../documentation/views/Select'),
             },
         },
         {
@@ -359,7 +359,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Table'),
+                    '../documentation/views/Table'),
             },
         },
         {
@@ -368,7 +368,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Textarea'),
+                    '../documentation/views/Textarea'),
             },
         },
         {
@@ -377,7 +377,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Tooltip'),
+                    '../documentation/views/Tooltip'),
             },
         },
         {
@@ -386,7 +386,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Tree'),
+                    '../documentation/views/Tree'),
             },
         },
         {
@@ -395,7 +395,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/TreePicker'),
+                    '../documentation/views/TreePicker'),
             },
         },
         {
@@ -404,7 +404,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Wrapper'),
+                    '../documentation/views/Wrapper'),
             },
         },
         {
@@ -413,7 +413,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Colors'),
+                    '../documentation/views/Colors'),
             },
         },
         {
@@ -422,7 +422,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Text'),
+                    '../documentation/views/Text'),
             },
         },
         {
@@ -431,7 +431,7 @@ export default new Router({
             props: {
                 component: () =>
                     import(/* webpackChunkName: "labkit-docs" */
-                    '@/labkit/documentation/views/Spacing'),
+                    '../documentation/views/Spacing'),
             },
         },
     ],

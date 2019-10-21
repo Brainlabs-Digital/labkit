@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import EventBus from '@/labkit/lib/event-bus';
+import EventBus from '../lib/event-bus';
 
 export default {
     beforeDestroy() {
@@ -43,5 +43,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

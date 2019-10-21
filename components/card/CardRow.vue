@@ -36,7 +36,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 .container {
     border-top: 1px solid border-color();

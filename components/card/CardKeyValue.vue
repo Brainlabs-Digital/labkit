@@ -14,7 +14,7 @@
 </template>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 .label {
     color: color(text, muted);

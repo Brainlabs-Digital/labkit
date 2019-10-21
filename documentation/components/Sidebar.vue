@@ -5,7 +5,9 @@
             :exact-active-class="$style['logo-link-active']"
             to="/labkit"
         >
+        <!--- FIXME
             <img src="@/assets/brainlabs-logo.png">
+        --->
         </router-link>
         <lk-navigation-tree :items="navigationItems"/>
     </div>
@@ -221,7 +223,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 .container {
     background: background-color(content);

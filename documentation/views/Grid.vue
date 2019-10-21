@@ -901,7 +901,7 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
+import Code from '../../documentation/components/Code';
 
 export default {
     components: {
@@ -911,8 +911,8 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/mixins';
-@import 'src/labkit/styles/variables';
+@import 'styles/mixins';
+@import 'styles/variables';
 
 /*
     We want to highlight the individual columns by giving them a background and/or

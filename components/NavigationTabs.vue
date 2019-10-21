@@ -208,7 +208,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 $spacing-link-vertical: spacing-vertical(button) - border-width(thick);
 

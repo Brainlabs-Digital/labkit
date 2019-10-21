@@ -627,8 +627,8 @@ export default {
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import Example from '@/labkit/documentation/components/examples/popper/Example';
+import Code from '../../documentation/components/Code';
+import Example from '../../documentation/components/examples/popper/Example';
 
 export default {
     components: {
@@ -639,7 +639,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 .popper-content {
     padding: spacing-vertical(content) spacing-horizontal();

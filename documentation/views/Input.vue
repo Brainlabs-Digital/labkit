@@ -522,12 +522,12 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import FocusExample from '@/labkit/documentation/components/examples/input/Focus';
-import BlurExample from '@/labkit/documentation/components/examples/input/Blur';
-import ClearExample from '@/labkit/documentation/components/examples/input/Clear';
-import ActionExample from '@/labkit/documentation/components/examples/input/Action';
-import Example from '@/labkit/documentation/components/examples/input/Example';
+import Code from '../../documentation/components/Code';
+import FocusExample from '../../documentation/components/examples/input/Focus';
+import BlurExample from '../../documentation/components/examples/input/Blur';
+import ClearExample from '../../documentation/components/examples/input/Clear';
+import ActionExample from '../../documentation/components/examples/input/Action';
+import Example from '../../documentation/components/examples/input/Example';
 
 export default {
     components: {
@@ -757,5 +757,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

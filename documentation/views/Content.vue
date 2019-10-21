@@ -83,8 +83,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import icons from '@/labkit/components/icon/icons';
+import Code from '../../documentation/components/Code';
+import icons from '../../components/icon/icons';
 
 export default {
     components: {
@@ -114,5 +114,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

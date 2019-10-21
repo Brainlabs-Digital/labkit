@@ -259,7 +259,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 $arrow-size: 0.7rem;
 $arrow-length: 1.2rem;

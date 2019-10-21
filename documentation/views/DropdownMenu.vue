@@ -96,8 +96,8 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import Example from '@/labkit/documentation/components/examples/dropdown-menu/Example';
+import Code from '../../documentation/components/Code';
+import Example from '../../documentation/components/examples/dropdown-menu/Example';
 
 export default {
     components: {
@@ -274,5 +274,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

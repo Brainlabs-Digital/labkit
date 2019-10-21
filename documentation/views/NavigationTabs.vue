@@ -546,8 +546,8 @@
 </template>
 
 <script>
-import CallbackExample from '@/labkit/documentation/components/examples/navigation-tabs/Callback';
-import Code from '@/labkit/documentation/components/Code';
+import CallbackExample from '../../documentation/components/examples/navigation-tabs/Callback';
+import Code from '../../documentation/components/Code';
 
 export default {
     components: {
@@ -1033,7 +1033,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 
 .dark-container {
     background: color(text);

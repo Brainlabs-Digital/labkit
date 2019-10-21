@@ -1,4 +1,4 @@
-import '@/labkit';
+import '../..';
 import {mount} from '@vue/test-utils';
 import Wrapper from './Wrapper';
 

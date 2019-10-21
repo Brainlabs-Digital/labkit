@@ -1,0 +1,12 @@
+:8081
+gzip
+
+rewrite {
+    if {path} starts_with /labkit
+    to {path} /labkit.html
+}
+
+rewrite {
+    to {path} {path}/ /
+}
+

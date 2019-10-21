@@ -4,6 +4,15 @@
 
 LabKit is a component library: a set of reusable components that complement each other.
 
+## Documentation
+
+Run `make up` and go to localhost:8081/labkit to see the documentation pages
+for labkit components.
+
+When you change or add a component, remember to update the documentation to
+demonstrate the new feature.
+
+
 ## Rules
 
 These rules are general guidelines, not concrete. If in the future we decide that they're not a good idea we shouldn't be afraid of breaking or changing them.

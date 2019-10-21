@@ -198,15 +198,15 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import DefaultExample from '@/labkit/documentation/components/examples/date-time-picker/DefaultExample';
-import DateTimeExampleWithError from '@/labkit/documentation/components/examples/date-time-picker/DateTimeExampleWithError';
-import DateTimeExample from '@/labkit/documentation/components/examples/date-time-picker/DateTimeExample';
-import DateTimeExampleWithDefault from '@/labkit/documentation/components/examples/date-time-picker/DateTimeExampleWithDefault';
-import DateTimeExampleWithClearOption from '@/labkit/documentation/components/examples/date-time-picker/DateTimeExampleWithClearOption';
-import TimeExample from '@/labkit/documentation/components/examples/date-time-picker/TimeExample';
-import ZoneExample from '@/labkit/documentation/components/examples/date-time-picker/DateTimeExampleWithValueZone';
-import Everything from '@/labkit/documentation/components/examples/date-time-picker/DateTimeFullWorks';
+import Code from '../../documentation/components/Code';
+import DefaultExample from '../../documentation/components/examples/date-time-picker/DefaultExample';
+import DateTimeExampleWithError from '../../documentation/components/examples/date-time-picker/DateTimeExampleWithError';
+import DateTimeExample from '../../documentation/components/examples/date-time-picker/DateTimeExample';
+import DateTimeExampleWithDefault from '../../documentation/components/examples/date-time-picker/DateTimeExampleWithDefault';
+import DateTimeExampleWithClearOption from '../../documentation/components/examples/date-time-picker/DateTimeExampleWithClearOption';
+import TimeExample from '../../documentation/components/examples/date-time-picker/TimeExample';
+import ZoneExample from '../../documentation/components/examples/date-time-picker/DateTimeExampleWithValueZone';
+import Everything from '../../documentation/components/examples/date-time-picker/DateTimeFullWorks';
 
 export default {
     components: {
@@ -375,5 +375,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

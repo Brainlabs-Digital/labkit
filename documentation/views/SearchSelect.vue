@@ -53,9 +53,9 @@
 </template>
 
 <script>
-import nodefault from '@/labkit/documentation/components/examples/search-select/NoDefault';
-import preselected from '@/labkit/documentation/components/examples/search-select/Preselected';
-import Code from '@/labkit/documentation/components/Code';
+import nodefault from '../../documentation/components/examples/search-select/NoDefault';
+import preselected from '../../documentation/components/examples/search-select/Preselected';
+import Code from '../../documentation/components/Code';
 
 export default {
     components: {
@@ -185,5 +185,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

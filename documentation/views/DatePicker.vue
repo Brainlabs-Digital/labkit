@@ -64,9 +64,9 @@
 </template>
 
 <script>
-import Code from '@/labkit/documentation/components/Code';
-import Example from '@/labkit/documentation/components/examples/date-picker/Example';
-import MinAndMaxRestrictions from '@/labkit/documentation/components/examples/date-picker/MinAndMaxRestrictions';
+import Code from '../../documentation/components/Code';
+import Example from '../../documentation/components/examples/date-picker/Example';
+import MinAndMaxRestrictions from '../../documentation/components/examples/date-picker/MinAndMaxRestrictions';
 
 export default {
     components: {
@@ -138,5 +138,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 </style>

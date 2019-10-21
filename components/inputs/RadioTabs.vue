@@ -46,7 +46,7 @@
     We may need to change this so that the stacked styling is the default,
     applying an inline style if stacked (at the breakpoint) is false.
 */
-import InputLabel from '@/labkit/components/inputs/utils/InputLabel';
+import InputLabel from '../../components/inputs/utils/InputLabel';
 
 export default {
     components: {
@@ -172,8 +172,8 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/mixins';
-@import 'src/labkit/styles/variables';
+@import 'styles/mixins';
+@import 'styles/variables';
 
 $spacing-label-vertical: spacing-vertical(button) - border-width(thick);
 

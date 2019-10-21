@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import InputLabel from '@/labkit/components/inputs/utils/InputLabel';
+import InputLabel from '../../components/inputs/utils/InputLabel';
 
 export default {
     components: {
@@ -102,7 +102,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'src/labkit/styles/variables';
+@import 'styles/variables';
 .container {
     border: border-width() solid border-color();
     border-radius: border-radius(button);
