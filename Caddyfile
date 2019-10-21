@@ -9,3 +9,4 @@ rewrite {
 rewrite {
     to {path} {path}/ /
 }
+

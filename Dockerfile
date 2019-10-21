@@ -14,6 +14,5 @@ COPY ./ /app
 
 RUN yarn run build
 
-
 WORKDIR /app/dist
 CMD ["caddy", "-conf", "../Caddyfile"]
