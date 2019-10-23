@@ -911,8 +911,8 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/mixins';
-@import 'styles/variables';
+@import '../../styles/mixins';
+@import '../../styles/variables';
 
 /*
     We want to highlight the individual columns by giving them a background and/or
