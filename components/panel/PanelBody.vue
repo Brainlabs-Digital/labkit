@@ -79,7 +79,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../../styles/variables';
 
 .container {
     background: color(text, inverse);

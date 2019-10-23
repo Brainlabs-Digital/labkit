@@ -34,7 +34,7 @@ export default {
     },
 };
 </script><style module lang="scss">
-@import 'styles/variables';
+@import '../../styles/variables';
 
 .icon-wrapper {
     display: inline-block;

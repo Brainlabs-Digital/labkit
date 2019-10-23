@@ -60,7 +60,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../../styles/variables';
 
 .action-items-container {
     margin: (0 - spacing-vertical(compact)) 0;

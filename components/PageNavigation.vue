@@ -105,7 +105,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../styles/variables';
 
 .current-page-text {
     display: inline-block;

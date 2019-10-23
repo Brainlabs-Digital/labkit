@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../styles/variables';
 .container {
     max-width: 30rem;
     padding: spacing-vertical(button) spacing-horizontal(button);

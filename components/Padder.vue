@@ -108,8 +108,8 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/mixins';
-@import 'styles/variables';
+@import '../styles/mixins';
+@import '../styles/variables';
 
 @mixin make-classes($prefix: '') {
     .#{$prefix}padding {

@@ -172,8 +172,8 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/mixins';
-@import 'styles/variables';
+@import '../../styles/mixins';
+@import '../../styles/variables';
 
 $spacing-label-vertical: spacing-vertical(button) - border-width(thick);
 
