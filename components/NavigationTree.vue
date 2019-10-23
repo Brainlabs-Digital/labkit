@@ -72,7 +72,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../styles/variables';
 
 .container {
     padding: 0 spacing-horizontal(badge) spacing-vertical(content) 0;

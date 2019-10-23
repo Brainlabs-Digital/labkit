@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../../../styles/variables';
 
 .error-container > p {
     color: color(danger);

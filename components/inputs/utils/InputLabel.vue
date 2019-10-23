@@ -44,7 +44,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../../../styles/variables';
 
 .hint-container > p {
     color: color(text, muted);

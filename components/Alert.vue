@@ -114,7 +114,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../styles/variables';
 
 @mixin make-alert($color, $color-dark, $color-muted, $color-semi-muted) {
     background: $color;

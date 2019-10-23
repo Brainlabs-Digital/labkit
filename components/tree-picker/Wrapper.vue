@@ -56,7 +56,7 @@
 </template>
 
 <script>
-import InputError from '../../components/inputs/utils/InputError';
+import InputError from '../inputs/utils/InputError';
 import Node from './Node';
 
 const filters = {
@@ -411,5 +411,5 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../../styles/variables';
 </style>

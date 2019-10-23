@@ -105,8 +105,8 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/mixins';
-@import 'styles/variables';
+@import '../../styles/mixins';
+@import '../../styles/variables';
 
 .items-container {
     background: background-color(content);
