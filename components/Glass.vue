@@ -11,12 +11,8 @@
 </template>
 
 <script>
-<<<<<<< HEAD
 import EventBus from '../lib/event-bus';
 
-=======
-import EventBus from '@/labkit/lib/event-bus';
->>>>>>> Added ability to size modals
 let instanceId = 0;
 export default {
     beforeDestroy() {
