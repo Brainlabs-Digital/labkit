@@ -342,7 +342,7 @@ export default {
 </script>
 
 <style module lang="scss">
-@import 'styles/variables';
+@import '../../styles/variables';
 
 .inverse-background {
     background: color(text);
