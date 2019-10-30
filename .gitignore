@@ -26,3 +26,4 @@ tags
 
 dist
 .npm-packages-offline-cache
+package-lock.json

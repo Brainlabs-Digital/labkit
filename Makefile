@@ -9,3 +9,7 @@ up:
 .PHONY: down
 down:
 	docker-compose down	
+
+.PHONY: lint
+lint:
+	docker-compose run --workdir /app --rm ui ./node_modules/.bin/eslint --ext .vue --ext .js documentation/ 
