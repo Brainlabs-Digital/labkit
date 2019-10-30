@@ -33,7 +33,7 @@ module.exports = {
         'prefer-const': 'error',
         'prefer-template': 'error',
         'vue/html-indent': ['error', 4],
-        'vue/mustache-interpolation-spacing': ['error', 'never'],
+        'vue/mustache-interpolation-spacing': 'never',
         'vue/require-default-prop': 0,
         'vue/require-prop-types': 0,
     },
