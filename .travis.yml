@@ -6,6 +6,8 @@ notifications:
   - ryutaro@brainlabsdigital.com
   on_success: change
   on_failure: change
-
+branches:
+  only:
+  - master
 script:
 - bash test.sh
