@@ -1,0 +1,11 @@
+os: linux
+dist: xenial
+language: generic
+notifications:
+  email:
+  - ryutaro@brainlabsdigital.com
+  on_success: change
+  on_failure: change
+
+script:
+- bash test.sh

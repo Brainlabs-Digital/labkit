@@ -12,4 +12,8 @@ down:
 
 .PHONY: lint
 lint:
-	docker-compose run --workdir /app --rm ui ./node_modules/.bin/eslint --ext .vue --ext .js documentation/ 
+	docker-compose run --workdir /app --rm ui ./node_modules/.bin/eslint --ext .vue --ext .js documentation/ lib/ components/
+
+.PHONY: lint.fix
+lint.fix:
+	docker-compose run --workdir /app --rm ui ./node_modules/.bin/eslint --ext .vue --ext .js documentation/ lib/ components/ --fix
