@@ -1,8 +1,13 @@
 <template>
     <portal :to="portalTarget">
         <transition name="fade-scale">
-            <div :class="[$style.wrapper]" ref="glass" @click="click">
-                <div :style="ifContainerSizeIsSet()" :class="[$style.container]">
+            <div 
+                :class="[$style.wrapper]" 
+                ref="glass" 
+                @click="click">
+                <div 
+                    :style="ifContainerSizeIsSet()" 
+                    :class="[$style.container]">
                     <slot />
                 </div>
             </div>
@@ -69,7 +74,7 @@ export default {
             if (this.containerSize !== undefined) {
                 return {
                     'max-width': this.containerSizeMappings[this.containerSize],
-                    'width': this.containerSizeMappings[this.containerSize],
+                    width: this.containerSizeMappings[this.containerSize],
                 };
             }
         },

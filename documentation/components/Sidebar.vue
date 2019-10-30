@@ -5,7 +5,7 @@
             :exact-active-class="$style['logo-link-active']"
             to="/labkit"
         >
-        <!--- FIXME
+            <!--- FIXME
             <img src="@/assets/brainlabs-logo.png">
         --->
         </router-link>
