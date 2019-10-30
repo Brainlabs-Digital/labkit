@@ -1,5 +1,7 @@
 # LabKit
 
+[![Build Status](https://travis-ci.com/Brainlabs-Digital/labkit.svg?branch=master)](https://travis-ci.com/Brainlabs-Digital/labkit)
+
 ## Intentions
 
 LabKit is a component library: a set of reusable components that complement each other.
