@@ -22,6 +22,7 @@
   "homepage": "https://github.com/Brainlabs-Digital/labkit#readme",
   "dependencies": {
     "dropzone": "^5.5.1",
+    "eslint": "^6.6.0",
     "highlightjs": "^9.10.0",
     "lodash.orderby": "^4.6.0",
     "luxon": "^1.12.1",
@@ -35,9 +36,13 @@
   },
   "devDependencies": {
     "@vue/cli-service": "^3.0.4",
-    "vue-template-compiler": "^2.5.17",
+    "@vue/eslint-config-prettier": "^5.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-vue": "^5.2.3",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.0.1",
+    "vue-template-compiler": "^2.5.17",
     "webpack": "^4.0.1"
   }
 }

@@ -13,3 +13,4 @@ services:
             - .:/app/:cached
             # don't hide the dist directory
             - /app/dist
+            - /app/node_modules
