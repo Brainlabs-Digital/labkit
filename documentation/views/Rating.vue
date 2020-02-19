@@ -4,8 +4,7 @@
         <p>The rating component (<code>lk-rating</code>)&hellip;</p>
         <lk-panel margin-bottom="content">
             <lk-panel-body>
-                <lk-rating>
-				</lk-rating>
+                <lk-rating/>
             </lk-panel-body>
             <lk-panel-body 
                 padding="none"
@@ -20,7 +19,7 @@
 		<p>Properties (<code>lk-rating</code>)&hellip;</p>
         <lk-panel margin-bottom="content">
             <lk-panel-body>
-                <lk-rating maxRating="10" v-model="currentRating" showRatingLabel="false">
+                <lk-rating maxRating="10" v-model="currentRating" showRatingLabel="false"/>
 				</lk-rating>
 				<span>
 					Current Rating {{currentRating}}
