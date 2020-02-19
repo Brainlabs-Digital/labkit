@@ -5,10 +5,9 @@
 			@mouseleave="mouseOut(index)"
 			@mousedown="mouseClick(index)"
 			>
-		<lk-icon :class="ratingClass(index)"
-		 	icon="star"></lk-icon>
+			<lk-icon :class="ratingClass(index)" icon="star"></lk-icon>
 		</span>
-		<span>({{internalValue}})</span>
+		<span v-if="showRatingLabel === true">({{internalValue}})</span>
 	</lk-content>
 </template>
 
@@ -17,7 +16,7 @@ export default {
 	methods: {
 		ratingClass (index) {
 			let returnClass = "";
-			if (index<=this.internalValue)
+			if (index<=this.tempInternalValue)
 			{
 				returnClass = [this.$style['selectedStar']];
 			} else {
@@ -26,10 +25,10 @@ export default {
 			return returnClass;
 		},
 		mouseOver(index){
-            this.activeStar = index;
+			this.tempInternalValue = index;
         },
 		mouseOut(index) {
-			this.activeStar = 0;
+			this.tempInternalValue = this.internalValue;
 		},
 		mouseClick(index) {
 			if (index===1 && this.internalValue===1) {
@@ -37,13 +36,15 @@ export default {
 			} else {
 				this.internalValue = index;
 			}
+
+			this.$emit('input', this.internalValue);
 		}
 	},
 	data() {
         return {
 			stars: this.maxRating,
-			activeStar: 0,
-			internalValue: this.currentRating,
+			internalValue: this.value,
+			tempInternalValue: this.value,
         };
     },
 	props: {
@@ -51,19 +52,15 @@ export default {
 			default: 5,
  			type: Number,
 		},
-        currentRating: {
+        value: {
 			default: 0,
             type: Number,
-        },
+		},
+		showRatingLabel: {
+			default: true,
+			type: Boolean
+		}
 	},
-	watch: {
-        internalValue() {
-            this.$emit('currentRating', this.internalValue);
-        },
-        value() {
-            this.internalValue = this.currentRating;
-        },
-    },
 }
 </script>
 
