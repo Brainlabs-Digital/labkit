@@ -343,6 +343,15 @@ export default new Router({
                     import(/* webpackChunkName: "labkit-docs" */
                     '../documentation/views/RadioTabs'),
             },
+		},
+		{
+            path: '/labkit/components/rating',
+            component: Layout,
+            props: {
+                component: () =>
+                    import(/* webpackChunkName: "labkit-docs" */
+                    '../documentation/views/Rating'),
+            },
         },
         {
             path: '/labkit/components/select',
