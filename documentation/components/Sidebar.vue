@@ -158,6 +158,10 @@ export default {
                             link: '/labkit/components/radio',
                         },
                         {
+                            label: 'Rating',
+                            link: '/labkit/components/rating',
+                        },
+                        {
                             label: 'Search Select',
                             link: '/labkit/components/search-select',
                         },

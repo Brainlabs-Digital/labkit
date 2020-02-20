@@ -345,6 +345,15 @@ export default new Router({
             },
         },
         {
+            path: '/labkit/components/rating',
+            component: Layout,
+            props: {
+                component: () =>
+                    import(/* webpackChunkName: "labkit-docs" */
+                    '../documentation/views/Rating'),
+            },
+        },
+        {
             path: '/labkit/components/select',
             component: Layout,
             props: {
