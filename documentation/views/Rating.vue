@@ -6,7 +6,7 @@
             <lk-panel-body>
                 <lk-rating/>
             </lk-panel-body>
-            <lk-panel-body 
+            <lk-panel-body
                 padding="none"
                 padding-bottom="none">
                 <format-code
@@ -20,12 +20,11 @@
         <lk-panel margin-bottom="content">
             <lk-panel-body>
                 <lk-rating maxRating="10" v-model="currentRating" showRatingLabel="false"/>
-				</lk-rating>
 				<span>
 					Current Rating {{currentRating}}
 				</span>
             </lk-panel-body>
-            <lk-panel-body 
+            <lk-panel-body
                 padding="none"
                 padding-bottom="none">
                 <format-code
@@ -33,7 +32,7 @@
                     language="js"
                 />
             </lk-panel-body>
-            <lk-panel-body 
+            <lk-panel-body
                 padding="none"
                 padding-bottom="none">
                 <format-code
