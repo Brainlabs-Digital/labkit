@@ -16,13 +16,16 @@
                 />
             </lk-panel-body>
         </lk-panel>
-		<p>Properties (<code>lk-rating</code>)&hellip;</p>
+        <p>Properties (<code>lk-rating</code>)&hellip;</p>
         <lk-panel margin-bottom="content">
             <lk-panel-body>
-                <lk-rating maxRating="10" v-model="currentRating" showRatingLabel="false"/>
-				<span>
-					Current Rating {{currentRating}}
-				</span>
+                <lk-rating 
+                    max-rating="10" 
+                    v-model="currentRating" 
+                    show-rating-label="false"/>
+                <span>
+                    Current Rating {{currentRating}}
+                </span>
             </lk-panel-body>
             <lk-panel-body
                 padding="none"
@@ -54,13 +57,13 @@ export default {
     },
     data() {
         return {
-			currentRating: 5,
+            currentRating: 5,
             standardTemplate: `
 <!-- Component <template> content -->
 <lk-rating currentRating="3">
 </lk-rating>
 			`,
-			 allParamsCode: `
+            allParamsCode: `
 // Component <script> content
 data() {
    return {

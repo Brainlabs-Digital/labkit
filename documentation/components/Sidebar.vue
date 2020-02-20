@@ -156,8 +156,8 @@ export default {
                         {
                             label: 'Radio',
                             link: '/labkit/components/radio',
-						},
-						{
+                        },
+                        {
                             label: 'Rating',
                             link: '/labkit/components/rating',
                         },
