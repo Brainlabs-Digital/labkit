@@ -1,7 +1,5 @@
 FROM node:10-alpine
 
-RUN apk --no-cache add caddy
-
 COPY package.json /app/package.json
 
 WORKDIR /app
@@ -15,4 +13,4 @@ COPY ./ /app
 RUN yarn run build
 
 WORKDIR /app/dist
-CMD ["caddy", "-conf", "../Caddyfile"]
+CMD ["yarn", "run", "serve"]
