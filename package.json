@@ -7,8 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "vue-cli-service build --modern"
+    "build": "vue-cli-service build --modern",
+    "serve": "vue-cli-service serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
