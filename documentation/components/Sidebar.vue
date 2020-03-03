@@ -164,6 +164,10 @@ export default {
                         {
                             label: 'Search Select',
                             link: '/labkit/components/search-select',
+						},
+						{
+                            label: 'Slider',
+                            link: '/labkit/components/slider',
                         },
                         {
                             label: 'Switch',
