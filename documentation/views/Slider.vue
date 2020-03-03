@@ -21,9 +21,10 @@
         <lk-panel margin-bottom="content">
             <lk-panel-body>
                 <lk-slider 
-                    minRange="1" maxRange="100"
+                    min-range="1" 
+                    max-range="100"
                     v-model="currentValue" 
-                    showValue="false"/>
+                    show-value="false"/>
                 <span>
                     Current Value {{currentValue}}
                 </span>

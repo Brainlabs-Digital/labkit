@@ -361,8 +361,8 @@ export default new Router({
                     import(/* webpackChunkName: "labkit-docs" */
                     '../documentation/views/Select'),
             },
-		},
-		{
+        },
+        {
             path: '/labkit/components/slider',
             component: Layout,
             props: {
