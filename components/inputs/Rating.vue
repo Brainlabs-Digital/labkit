@@ -73,6 +73,6 @@ export default {
     color: rgb(239, 114, 150);
 }
 .unselectedStar {
-    color: rgb(173, 173, 173);
+    color: rgb(240, 240, 240);
 }
 </style>

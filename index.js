@@ -41,9 +41,9 @@ import Radio from './components/inputs/Radio';
 import Rating from './components/inputs/Rating';
 import RadioTabs from './components/inputs/RadioTabs';
 import Select from './components/inputs/Select';
+import Slider from './components/inputs/Slider';
 import Textarea from './components/inputs/Textarea';
 import TreePicker from './components/tree-picker/Wrapper';
-
 import Card from './components/card/Card';
 import CardRow from './components/card/CardRow';
 import CardKeyValue from './components/card/CardKeyValue';
@@ -69,6 +69,7 @@ Vue.component(`${labKitPrefix}-radio`, Radio);
 Vue.component(`${labKitPrefix}-rating`, Rating);
 Vue.component(`${labKitPrefix}-radio-tabs`, RadioTabs);
 Vue.component(`${labKitPrefix}-select`, Select);
+Vue.component(`${labKitPrefix}-slider`, Slider);
 Vue.component(`${labKitPrefix}-textarea`, Textarea);
 Vue.component(`${labKitPrefix}-tree-picker`, TreePicker);
 

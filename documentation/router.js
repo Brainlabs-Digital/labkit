@@ -363,6 +363,15 @@ export default new Router({
             },
         },
         {
+            path: '/labkit/components/slider',
+            component: Layout,
+            props: {
+                component: () =>
+                    import(/* webpackChunkName: "labkit-docs" */
+                    '../documentation/views/Slider'),
+            },
+        },
+        {
             path: '/labkit/components/table',
             component: Layout,
             props: {
