@@ -22,7 +22,7 @@
 export default {
     methods: {
         valueChange() {
-            this.$emit('input', parseInt(this.internalValue));
+            this.$emit('input', parseInt(this.internalValue, 10));
         },
     },
     data() {
