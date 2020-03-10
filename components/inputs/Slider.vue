@@ -2,13 +2,13 @@
     <lk-content>
         <div :class="$style.slidercontainer">
             <div :class="sliderbox">
-                <input 
-                    type="range" 
-                    :min="minRange" 
-                    :max="maxRange" 
-                    v-model="internalValue" 
-                    id="myRange" 
-                    :class="$style.slider" 
+                <input
+                    type="range"
+                    :min="minRange"
+                    :max="maxRange"
+                    v-model="internalValue"
+                    id="myRange"
+                    :class="$style.slider"
                     @change="valueChange">
             </div>
             <div :class="sliderLabel">
@@ -22,7 +22,7 @@
 export default {
     methods: {
         valueChange() {
-            this.$emit('input', this.internalValue);
+            this.$emit('input', parseInt(this.internalValue));
         },
     },
     data() {
