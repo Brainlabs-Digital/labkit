@@ -23,7 +23,7 @@
 @mixin make-input-label-container($input-type) {
     input[type='#{$input-type}'] {
         clip: rect(1px, 1px, 1px, 1px);
-        position: absolute;
+        position: fixed;
         white-space: nowrap;
         opacity: 0;
         border-width: 0px;

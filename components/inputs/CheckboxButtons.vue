@@ -1,11 +1,11 @@
 <template>
     <lk-wrapper v-bind="wrapperProps">
         <input-label :has-error="hasError">
-            <slot 
-                name="label" 
+            <slot
+                name="label"
                 slot="label"/>
-            <slot 
-                name="hint" 
+            <slot
+                name="hint"
                 slot="hint"/>
         </input-label>
         <div :class="itemsContainerClasses">
@@ -17,8 +17,8 @@
                     :key="`${item.value}-input`"
                     :value="item.value"
                 >
-                <label 
-                    :for="`${_uid}-${index}`" 
+                <label
+                    :for="`${_uid}-${index}`"
                     :key="`${item.value}-label`">
                     <span :class="[$style.icon]">
                         <lk-icon
@@ -35,8 +35,8 @@
             </template>
         </div>
         <input-error :has-error="hasError">
-            <slot 
-                name="error" 
+            <slot
+                name="error"
                 slot="error"/>
         </input-error>
     </lk-wrapper>
@@ -120,7 +120,7 @@ export default {
     }
     input[type='checkbox'] {
         clip: rect(1px, 1px, 1px, 1px);
-        position: absolute;
+        position: fixed;
         white-space: nowrap;
         opacity: 0;
         border-width: 0px;

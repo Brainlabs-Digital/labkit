@@ -1,11 +1,11 @@
 <template>
     <lk-wrapper v-bind="wrapperProps">
         <input-label>
-            <slot 
-                name="label" 
+            <slot
+                name="label"
                 slot="label"/>
-            <slot 
-                name="hint" 
+            <slot
+                name="hint"
                 slot="hint"/>
         </input-label>
         <div :class="classes">
@@ -187,7 +187,7 @@ $spacing-label-vertical: spacing-vertical(button) - border-width(thick);
     overflow: hidden;
     input[type='radio'] {
         clip: rect(1px, 1px, 1px, 1px);
-        position: absolute;
+        position: fixed;
         white-space: nowrap;
         opacity: 0;
         border-width: 0px;
