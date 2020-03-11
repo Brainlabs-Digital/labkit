@@ -3,18 +3,18 @@
         :container-size="readSizeProperty" 
         unbreakable>
         <lk-panel shadow-shallow>
-			 <div 
-				v-if="showCloseButton === true" 
-				:class="$style['close-button-container']">
-				<lk-button 
-					circle 
-					mini
-					danger 
-					shadow 
-					@click.native="close">
-					<lk-icon icon="times" />
-				</lk-button>
-			</div>
+            <div 
+                v-if="showCloseButton === true" 
+                :class="$style['close-button-container']">
+                <lk-button 
+                    circle 
+                    mini
+                    danger 
+                    shadow 
+                    @click.native="close">
+                    <lk-icon icon="times" />
+                </lk-button>
+            </div>
             <slot />
         </lk-panel>
        
@@ -50,9 +50,9 @@ export default {
 @import '../styles/variables';
 
 .close-button-container {
-	margin-top: spacing-vertical(button, compact);
-	margin-right: (spacing-horizontal(button, compact)-0.2rem);
-	float:right;
+    margin-top: spacing-vertical(button, compact);
+    margin-right: (spacing-horizontal(button, compact)-0.2rem);
+    float: right;
     z-index: 1;
 }
 </style>
