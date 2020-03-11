@@ -19,10 +19,10 @@
         <p>Properties (<code>lk-rating</code>)&hellip;</p>
         <lk-panel margin-bottom="content">
             <lk-panel-body>
-                <lk-rating 
-                    max-rating="10" 
-                    v-model="currentRating" 
-                    show-rating-label="false"/>
+                <lk-rating
+                    :max-rating="10"
+                    v-model="currentRating"
+                    :show-rating-label="false"/>
                 <span>
                     Current Rating {{currentRating}}
                 </span>
@@ -74,7 +74,7 @@ data() {
             `,
             allParamsTemplate: `
 <!-- Component <template> content -->
-<lk-rating maxRating="10" v-model="currentRating" showRatingLabel="false">
+<lk-rating :maxRating="10" v-model="currentRating" :showRatingLabel="false">
 </lk-rating>
             `,
         };
