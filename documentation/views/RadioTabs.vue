@@ -6,7 +6,7 @@
             <lk-panel-body>
                 <example/>
             </lk-panel-body>
-            <lk-panel-body 
+            <lk-panel-body
                 padding="none"
                 padding-bottom="none">
                 <format-code
@@ -14,7 +14,7 @@
                     language="js"
                 />
             </lk-panel-body>
-            <lk-panel-body 
+            <lk-panel-body
                 padding="none"
                 padding-bottom="none">
                 <format-code
@@ -25,12 +25,12 @@
             </lk-panel-body>
         </lk-panel>
         <h3>Spacing and display</h3>
-        <p>The Radio Tabs component implements the <router-link to="/labkit/components/wrapper">Wrapper</router-link> component and has access to all of it's props. By default <code>margin-bottom</code> is set to <code>content</code>. The <code>display</code> prop is controlled internally within the component depending on the value of the <code>stacked</code> prop and as such setting it as a prop of this component will have no effect.</p>
+        <p>The Radio Tabs component implements the <router-link to="/labkit/components/wrapper">Wrapper</router-link> component and has access to all of it's props. By default <code>margin-bottom</code> is set to <code>content</code>. The <code>display</code> prop is controlled internally within the component depending on the value of the <code>stacked</code> prop and as such setting it as a prop of this component will have no effect. The <code>position: relative;</code> style flag is to override a known bug causing leftward shifts on selecting.</p>
         <h3>Styling</h3>
         <p>We can add color, danger or success, to the selected item by specifying a style in for the item in the <code>items</code> prop.</p>
         <lk-panel margin-bottom="content">
             <lk-panel-body>
-                <lk-radio-tabs 
+                <lk-radio-tabs
                     :items="[
                         {
                             label: 'Success',
@@ -48,7 +48,7 @@
                         },
                 ]" />
             </lk-panel-body>
-            <lk-panel-body 
+            <lk-panel-body
                 padding="none"
                 padding-bottom="none">
                 <format-code
@@ -62,7 +62,7 @@
         <p>We can make the radio tabs display as a stack as opposed to inline using the <code>stacked</code> prop.</p>
         <lk-panel>
             <lk-panel-body>
-                <lk-radio-tabs 
+                <lk-radio-tabs
                     :items="[
                         {
                             label: 'Success',
@@ -82,7 +82,7 @@
                     stacked
                 />
             </lk-panel-body>
-            <lk-panel-body 
+            <lk-panel-body
                 padding="none"
                 padding-bottom="none">
                 <format-code
@@ -128,6 +128,7 @@ export default {
             interactionSampleTemplate: `
 <!-- Component <template> content -->
 <lk-radio-tabs
+    style="position: relative;"
     v-model="selectedItem"
     :items="[
         {
@@ -173,7 +174,7 @@ export default {
                 },
             ],
             stackedTemplateExample: `
-<lk-radio-tabs 
+<lk-radio-tabs
     :items="[
         {
             label: 'Success',

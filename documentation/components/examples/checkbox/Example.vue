@@ -2,6 +2,7 @@
     <div>
         <lk-checkbox
             v-model="selectedItems"
+            style="position: relative;"
             :has-error="hasError"
             :items="[
                 {
@@ -39,8 +40,8 @@
             <lk-divider margin-bottom="content"/>
             <p><em>Selected items: </em><strong v-if="selectedItems.length === 0"> None</strong></p>
             <ul v-if="selectedItems.length > 0">
-                <li 
-                    v-for="item in selectedItems" 
+                <li
+                    v-for="item in selectedItems"
                     :key="item"
                 >{{item}}</li>
             </ul>

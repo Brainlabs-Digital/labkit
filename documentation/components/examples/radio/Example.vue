@@ -2,6 +2,7 @@
     <div>
         <lk-radio
             v-model="selectedItem"
+            style="position: relative;"
             :items="[
                 {
                     label: 'First Option Label',

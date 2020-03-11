@@ -2,6 +2,7 @@
     <div>
         <lk-radio-tabs
             v-model="selectedItem"
+            style="position: relative;"
             :items="[
                 {
                     label: 'Admin',

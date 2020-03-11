@@ -6,7 +6,7 @@
             <lk-panel-body>
                 <example/>
             </lk-panel-body>
-            <lk-panel-body 
+            <lk-panel-body
                 padding="none"
                 padding-bottom="none">
                 <format-code
@@ -14,7 +14,7 @@
                     language="js"
                 />
             </lk-panel-body>
-            <lk-panel-body 
+            <lk-panel-body
                 padding="none"
                 padding-bottom="none">
                 <format-code
@@ -25,7 +25,7 @@
             </lk-panel-body>
         </lk-panel>
         <h3>Spacing and display</h3>
-        <p>The Checkbox component implements the <router-link to="/labkit/components/wrapper">Wrapper</router-link> component and has access to all of it's props. By default <code>margin-bottom</code> is set to <code>content</code>.</p>
+        <p>The Checkbox component implements the <router-link to="/labkit/components/wrapper">Wrapper</router-link> component and has access to all of it's props. By default <code>margin-bottom</code> is set to <code>content</code>. The <code>position: relative;</code> style flag is to override a known bug causing leftward shifts on selecting.</p>
         <h3>[TODO]</h3>
         <ul>
             <li>Examples with and without labels and hints.</li>
@@ -63,6 +63,7 @@ export default {
 <!-- Component <template> content -->
 <lk-checkbox
     v-model="selectedItems"
+    style="position: relative;"
     :has-error="hasError"
     :items="[
         {
