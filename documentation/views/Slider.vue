@@ -20,11 +20,11 @@
         <p>Properties for slider component (<code>lk-slider</code>)&hellip;</p>
         <lk-panel margin-bottom="content">
             <lk-panel-body>
-                <lk-slider 
-                    min-range="1" 
-                    max-range="100"
-                    v-model="currentValue" 
-                    show-value="false"/>
+                <lk-slider
+                    :min-range="1"
+                    :max-range="100"
+                    v-model="currentValue"
+                    :show-value="false"/>
                 <span>
                     Current Value {{currentValue}}
                 </span>
@@ -62,8 +62,7 @@ export default {
             currentValue: 51,
             standardTemplate: `
 <!-- Component <template> content -->
-<lk-rating currentRating="3">
-</lk-rating>
+<lk-slider/>
 			`,
             allParamsCode: `
 // Component <script> content
@@ -76,10 +75,10 @@ data() {
             `,
             allParamsTemplate: `
 <!-- Component <template> content -->
-<lk-slider 
-minRange="1" maxRange="100"
-v-model="currentValue" 
-showValue="false"/>
+<lk-slider
+:minRange="1" :maxRange="100"
+v-model="currentValue"
+:showValue="false"/>
             `,
         };
     },
