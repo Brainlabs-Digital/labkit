@@ -214,7 +214,7 @@ export default {
         changedItem(item) {
             this.selectedItem = item;
         },
-        inputHasError(item) {
+        inputHasError() {
             return true;
         },
         dataItems() {
