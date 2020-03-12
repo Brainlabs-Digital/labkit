@@ -215,7 +215,7 @@ export default {
             this.selectedItem = item;
         },
         inputHasError(item) {
-            return this.selectedItem != {};
+            return true;
         },
         dataItems() {
             const dummyData = [];

@@ -42,7 +42,7 @@ export default {
             this.selectedItem = item;
         },
         inputHasError() {
-            return this.selectedItem !== {};
+            return true;
         },
         dataItems() {
             const dummyData = [];
