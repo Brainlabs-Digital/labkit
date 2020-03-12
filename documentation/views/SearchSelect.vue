@@ -125,7 +125,7 @@ export default {
         :options="dataItems()"
         @selected="changedItem"
         placeholder="Select an option">
-      <template slot="label">Simple Example</template>
+      <template slot="label">Simple Example (error state)</template>
       <template slot="hint">
         <p>This simple example shows a basic search select with a list of items.</p>
       </template>
@@ -243,7 +243,8 @@ export default {
                 <p>This simple example shows a basic search select with a list of items.</p>
             </template>
             <template slot="error">
-              <p>Error message</p>
+              <p>Example error message.</p>
+              <p>This is the second line of the error message.</p>
             </template>
         </lk-search-select>
         <lk-divider margin-bottom="content"/>
