@@ -2,7 +2,7 @@
 
 <template>
     <lk-wrapper>
-        <input-label>
+        <input-label :has-error="hasError">
             <slot
                 name="label"
                 slot="label" />
@@ -27,8 +27,8 @@
             </div>
         </lk-dropdown-menu>
         <input-error :has-error="hasError">
-            <slot 
-                name="error" 
+            <slot
+                name="error"
                 slot="error" />
         </input-error>
     </lk-wrapper>

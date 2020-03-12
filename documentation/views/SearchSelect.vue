@@ -12,19 +12,19 @@
             <lk-panel-body>
                 <nodefault/>
             </lk-panel-body>
-            <lk-panel-body 
-                padding="none" 
+            <lk-panel-body
+                padding="none"
                 padding-bottom="none">
-                <format-code 
-                    :code="example1SampleScript" 
+                <format-code
+                    :code="example1SampleScript"
                     language="js"/>
             </lk-panel-body>
-            <lk-panel-body 
-                padding="none" 
+            <lk-panel-body
+                padding="none"
                 padding-bottom="none">
-                <format-code 
-                    :code="example1SampleTemplate" 
-                    language="html" 
+                <format-code
+                    :code="example1SampleTemplate"
+                    language="html"
                     rounded-bottom-corners/>
             </lk-panel-body>
         </lk-panel>
@@ -33,19 +33,40 @@
             <lk-panel-body>
                 <preselected/>
             </lk-panel-body>
-            <lk-panel-body 
-                padding="none" 
+            <lk-panel-body
+                padding="none"
                 padding-bottom="none">
-                <format-code 
-                    :code="example2SampleScript" 
+                <format-code
+                    :code="example2SampleScript"
                     language="js"/>
             </lk-panel-body>
-            <lk-panel-body 
-                padding="none" 
+            <lk-panel-body
+                padding="none"
                 padding-bottom="none">
-                <format-code 
-                    :code="example2SampleTemplate" 
-                    language="html" 
+                <format-code
+                    :code="example2SampleTemplate"
+                    language="html"
+                    rounded-bottom-corners/>
+            </lk-panel-body>
+        </lk-panel>
+        <h3>Example with error</h3>
+        <lk-panel>
+            <lk-panel-body>
+                <error/>
+            </lk-panel-body>
+            <lk-panel-body
+                padding="none"
+                padding-bottom="none">
+                <format-code
+                    :code="example3SampleScript"
+                    language="js"/>
+            </lk-panel-body>
+            <lk-panel-body
+                padding="none"
+                padding-bottom="none">
+                <format-code
+                    :code="example3SampleTemplate"
+                    language="html"
                     rounded-bottom-corners/>
             </lk-panel-body>
         </lk-panel>
@@ -53,6 +74,7 @@
 </template>
 
 <script>
+import error from '../../documentation/components/examples/search-select/Error';
 import nodefault from '../../documentation/components/examples/search-select/NoDefault';
 import preselected from '../../documentation/components/examples/search-select/Preselected';
 import Code from '../../documentation/components/Code';
@@ -61,6 +83,7 @@ export default {
     components: {
         nodefault,
         preselected,
+        error,
         formatCode: Code,
     },
     methods: {
@@ -98,9 +121,9 @@ export default {
             example1SampleTemplate: `
 <!-- Component <template> content -->
   <div>
-    <lk-search-select 
-        :options="dataItems()" 
-        @selected="changedItem" 
+    <lk-search-select
+        :options="dataItems()"
+        @selected="changedItem"
         placeholder="Select an option">
       <template slot="label">Simple Example</template>
       <template slot="hint">
@@ -179,6 +202,64 @@ export default {
         <lk-divider margin-bottom="content"/>
     </lk-content>
 </div>`,
+            example3SampleScript: `
+// Component <script> content
+export default {
+    data() {
+        return {
+            selectedItem: {},
+        };
+    },
+    methods: {
+        changedItem(item) {
+            this.selectedItem = item;
+        },
+        inputHasError(item) {
+            return this.selectedItem != {};
+        },
+        dataItems() {
+            const dummyData = [];
+            for (let index = 0; index < 50; index++) {
+                dummyData.push({
+                    id: index,
+                    name: \`Example Item \${index}\`,
+                });
+            }
+            return dummyData;
+        },
+    },
+};
+            `,
+            example3SampleTemplate: `
+<!-- Component <template> content -->
+    <div>
+        <lk-search-select
+            :options="dataItems()"
+            :has-error="inputHasError()"
+            @selected="changedItem"
+            placeholder="Select an option">
+            <template slot="label">Simple Example</template>
+            <template slot="hint">
+                <p>This simple example shows a basic search select with a list of items.</p>
+            </template>
+            <template slot="error">
+              <p>Error message</p>
+            </template>
+        </lk-search-select>
+        <lk-divider margin-bottom="content"/>
+        <lk-content>
+            <p>
+                <em>Selected Item Name:</em>
+                <strong>{{selectedItem.name}}</strong>
+            </p>
+            <lk-divider margin-bottom="content"/>
+            <p>
+                <em>Selected Item ID:</em>
+                <strong>{{selectedItem.id}}</strong>
+            </p>
+        </lk-content>
+    </div>
+            `,
         };
     },
 };
