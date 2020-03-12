@@ -2,20 +2,20 @@
 
 <template>
     <lk-wrapper>
-        <input-label>
-            <slot 
-                name="label" 
-                slot="label"/>
-            <slot 
-                name="hint" 
-                slot="hint"/>
+        <input-label :has-error="hasError">
+            <slot
+                name="label"
+                slot="label" />
+            <slot
+                name="hint"
+                slot="hint" />
         </input-label>
         <lk-dropdown-menu
             v-bind="dropdownMenuProps"
             @toggled="setDropdownIsVisible"
             :class="$style.dropdown"
         >
-            <div>
+            <div :class="itemsContainerClasses">
                 <input
                     type="text"
                     v-model="searchFilter"
@@ -26,6 +26,11 @@
                 >
             </div>
         </lk-dropdown-menu>
+        <input-error :has-error="hasError">
+            <slot
+                name="error"
+                slot="error" />
+        </input-error>
     </lk-wrapper>
 </template>
 
@@ -39,6 +44,13 @@ export default {
         InputLabel,
     },
     computed: {
+        itemsContainerClasses() {
+            const classes = [this.$style['items-container']];
+            if (this.hasError === true) {
+                classes.push(this.$style['has-error']);
+            }
+            return classes;
+        },
         dropdownMenuProps() {
             return {
                 'margin-bottom': 'content',
@@ -163,6 +175,9 @@ export default {
             required: false,
             default: 6,
         },
+        hasError: {
+            type: Boolean,
+        },
     },
 };
 </script>
@@ -190,5 +205,39 @@ input {
     position: relative;
     width: 100%;
     z-index: 1;
+}
+.has-error {
+    margin: 0;
+    > input {
+        border-color: color(danger);
+        &:hover {
+            border-color: color(danger);
+            box-shadow: 0 0 0 border-width(medium) rgba(color(danger), 0.125);
+            + .prefix,
+            + .prefix + .suffix,
+            + .suffix {
+                background: color(danger);
+                border-color: color(danger);
+                color: color(text, inverse);
+            }
+        }
+        &:focus {
+            border-color: color(danger, dark);
+            box-shadow: 0 0 0 border-width(thick) rgba(color(danger), 0.25);
+            + .prefix,
+            + .prefix + .suffix,
+            + .suffix {
+                background: color(danger, dark);
+                border-color: color(danger, dark);
+                color: color(text, inverse);
+            }
+        }
+    }
+    > .prefix,
+    > .suffix {
+        background: color(danger, muted);
+        border-color: color(danger);
+        color: color(danger, dark);
+    }
 }
 </style>
