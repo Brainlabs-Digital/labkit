@@ -79,7 +79,7 @@ export default {
                 If we updating the value prop external to this component, we want
                 to update our internal value to reflect the change.
             */
-            this.inputValue = this.value;
+            this.internalValue = this.value;
         },
     },
 };
